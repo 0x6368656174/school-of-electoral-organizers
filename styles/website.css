@@ -12,7 +12,7 @@
 .markdown-section li,
 .markdown-section pre,
 .markdown-section pre > code {
-    all: unset;
+    all: initial;
 }
 
 .markdown-section h1 {
