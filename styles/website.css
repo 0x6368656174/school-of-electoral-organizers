@@ -14,6 +14,7 @@
 }
 
 .markdown-section h1 {
+    display: block;
     color: #101010;
     font-family: Roboto, sans-serif;
     font-size: 17px;
@@ -25,6 +26,7 @@
 
 .markdown-section h2,
 .markdown-section h3 {
+    display: block;
     color: #464646;
     font-family: Roboto, sans-serif;
     font-size: 15px;
@@ -35,6 +37,7 @@
 }
 
 .markdown-section h4 {
+    display: block;
     color: #818181;
     font-family: Roboto;
     font-size: 13px;
@@ -94,6 +97,7 @@
 }
 
 .markdown-section li {
+    display: block;
     color: #585858;
     font-family: Roboto;
     font-size: 15px;
@@ -102,6 +106,7 @@
 }
 
 .markdown-section pre {
+    display: block;
     padding-left: 21px;
     padding-right: 21px;
     background: none;
