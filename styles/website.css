@@ -20,6 +20,7 @@
 }
 
 .markdown-section th {
+    height: 54px;
     background-color: #6e95a3;
     color: white;
     font-family: Roboto;
