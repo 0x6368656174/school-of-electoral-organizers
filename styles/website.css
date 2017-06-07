@@ -2,9 +2,6 @@
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4,
-.markdown-section th,
-.markdown-section tr,
-.markdown-section td,
 .markdown-section p,
 .markdown-section img,
 .markdown-section ul,
@@ -101,12 +98,16 @@
 }
 
 .markdown-section li {
-    display: block;
+    display: list-item;
     color: #585858;
     font-family: Roboto;
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.markdown-section ol li {
+    list-style-type: decimal
 }
 
 .markdown-section pre {
