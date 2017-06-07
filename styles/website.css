@@ -7,6 +7,8 @@
 .markdown-section td,
 .markdown-section p,
 .markdown-section img,
+.markdown-section ul,
+.markdown-section ol,
 .markdown-section li,
 .markdown-section pre,
 .markdown-section pre > code {
