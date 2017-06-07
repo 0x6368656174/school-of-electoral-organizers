@@ -1,4 +1,4 @@
-h1 {
+.markdown-section h1 {
     color: #101010;
     font-family: Roboto, sans-serif;
     font-size: 17px;
@@ -8,7 +8,7 @@ h1 {
     margin-bottom: 29px;
 }
 
-h2 {
+.markdown-section h2 {
     color: #464646;
     font-family: Roboto, sans-serif;
     font-size: 15px;
@@ -18,7 +18,7 @@ h2 {
     margin-bottom: 16px;
 }
 
-p {
+.markdown-section p {
     color: #585858;
     font-family: Roboto, sans-serif;
     font-size: 15px;
