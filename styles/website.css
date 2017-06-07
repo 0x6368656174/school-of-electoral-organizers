@@ -31,10 +31,12 @@
     vertical-align: middle;
     padding-left: 22px;
     padding-right: 22px;
+    border: none;
 }
 
 .markdown-section tr {
     background-color: #f1f1f1;
+    border: none;
 }
 
 .markdown-section tr:nth-child(2n) {
@@ -51,6 +53,7 @@
     vertical-align: middle;
     padding-left: 22px;
     padding-right: 22px;
+    border: none;
 }
 
 .markdown-section h4 {
