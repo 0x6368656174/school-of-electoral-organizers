@@ -92,7 +92,7 @@
     background: none;
 }
 
-.markdown-section code {
+.markdown-section pre > code {
     color: #585858;
     font-family: Roboto;
     font-size: 15px;
