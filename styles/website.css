@@ -1,3 +1,18 @@
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section th,
+.markdown-section tr,
+.markdown-section td,
+.markdown-section p,
+.markdown-section img,
+.markdown-section li,
+.markdown-section pre,
+.markdown-section pre > code {
+    all: unset;
+}
+
 .markdown-section h1 {
     color: #101010;
     font-family: Roboto, sans-serif;
@@ -17,6 +32,15 @@
     line-height: 17px;
     margin-top: 0;
     margin-bottom: 16px;
+}
+
+.markdown-section h4 {
+    color: #818181;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 18px;
 }
 
 .markdown-section th {
@@ -54,15 +78,6 @@
     padding-left: 22px;
     padding-right: 22px;
     border: none;
-}
-
-.markdown-section h4 {
-    color: #818181;
-    font-family: Roboto;
-    font-size: 13px;
-    font-style: italic;
-    line-height: 18px;
-    margin-bottom: 18px;
 }
 
 .markdown-section p {
