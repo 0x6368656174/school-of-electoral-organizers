@@ -4,6 +4,9 @@
 .markdown-section h4,
 .markdown-section p,
 .markdown-section img,
+.markdown-section th,
+.markdown-section tr,
+.markdown-section td,
 .markdown-section ul,
 .markdown-section ol,
 .markdown-section li,
@@ -46,6 +49,7 @@
 }
 
 .markdown-section table th {
+    display: table-cell;
     height: 54px;
     background-color: #6e95a3;
     color: white;
@@ -70,6 +74,7 @@
 }
 
 .markdown-section table td {
+    display: table-cell;
     height: 40px;
     color: #979797;
     font-family: Roboto;
