@@ -133,7 +133,7 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 22px;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 .markdown-section table {
