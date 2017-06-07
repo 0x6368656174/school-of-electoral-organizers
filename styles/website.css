@@ -9,8 +9,7 @@
 }
 
 .markdown-section h2,
-.markdown-section h3,
- {
+.markdown-section h3 {
     color: #464646;
     font-family: Roboto, sans-serif;
     font-size: 15px;
@@ -47,11 +46,13 @@
 }
 
 .markdown-section h4 {
-    color: #585858;
+    height: 83px;
+    color: #818181;
     font-family: Roboto;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22px;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 18px;
 }
 
 .markdown-section p {
@@ -61,4 +62,8 @@
     font-weight: 400;
     line-height: 22px;
     margin-bottom: 15px;
+}
+
+.markdown-section img {
+    margin-top: 35px;
 }
