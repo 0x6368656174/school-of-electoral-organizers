@@ -3,5 +3,4 @@ install:
 
 script:
   - mkdir -p dist
-  - pwd
   - pandoc -S -o dist/book.epub kurs-4/12/*.md
