@@ -20,3 +20,6 @@ _book
 
 # Temp
 *~
+
+# Dist
+/dist/
