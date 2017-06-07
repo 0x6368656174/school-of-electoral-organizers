@@ -4,6 +4,7 @@
 .markdown-section h4,
 .markdown-section p,
 .markdown-section img,
+.markdown-section table,
 .markdown-section th,
 .markdown-section tr,
 .markdown-section td,
@@ -65,6 +66,7 @@
 }
 
 .markdown-section table tr {
+    display: table-row;
     background-color: #f1f1f1;
     border: none;
 }
@@ -109,6 +111,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
+    margin-left: 16px;
 }
 
 .markdown-section ol li {
@@ -120,6 +123,7 @@
     padding-left: 21px;
     padding-right: 21px;
     background: none;
+    margin-bottom: 15px;
 }
 
 .markdown-section pre > code {
@@ -128,4 +132,5 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 22px;
+    white-space: pre;
 }
