@@ -134,3 +134,8 @@
     line-height: 22px;
     white-space: pre;
 }
+
+.markdown-section table {
+    display: table;
+    width: 100%;
+}
