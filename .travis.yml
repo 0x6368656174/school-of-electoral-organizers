@@ -3,6 +3,8 @@ cache: packages
 pandoc_version: 1.19
 dist: trusty
 sudo: required
+install:
+- "npm install"
 script:
 - "./build.sh"
 deploy:

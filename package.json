@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "node-pandoc": "^0.3.0",
-    "pandoc": "^0.2.0",
     "svgexport": "^0.3.2",
     "svgo": "^0.7.2"
   },
