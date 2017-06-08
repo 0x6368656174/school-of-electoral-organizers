@@ -4,6 +4,7 @@ pandoc_version: 1.19
 dist: trusty
 sudo: required
 install:
+- "sudo apt-get install optipng -qq"
 - "npm install"
 script:
 - "./build.sh"
