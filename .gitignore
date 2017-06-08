@@ -19,6 +19,7 @@ _book
 .idea
 
 # Temp
+/build/
 *~
 
 # Dist
