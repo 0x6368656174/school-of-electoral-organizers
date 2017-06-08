@@ -12,3 +12,5 @@ cd build
 FILES=`find . -iname "*.md" | sort`
 
 pandoc -f markdown+header_attributes -t epub3 -S --normalize --epub-chapter-level=3 --epub-stylesheet=epub.css -o ../dist/book.epub title.txt $FILES
+
+ls $TRAVIS_BUILD_DIR
