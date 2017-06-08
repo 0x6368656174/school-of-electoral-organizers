@@ -1,0 +1,26 @@
+{
+  "name": "school-of-electoral-organizers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-pandoc": "^0.3.0",
+    "pandoc": "^0.2.0",
+    "svgexport": "^0.3.2",
+    "svgo": "^0.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x6368656174/school-of-electoral-organizers.git"
+  },
+  "author": "Pave Puchkov (0x6368656174@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0x6368656174/school-of-electoral-organizers/issues"
+  },
+  "homepage": "https://github.com/0x6368656174/school-of-electoral-organizers#readme"
+}

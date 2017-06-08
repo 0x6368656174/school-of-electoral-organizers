@@ -20,7 +20,9 @@ _book
 
 # Temp
 /build/
+/build-svg/
 *~
 
 # Dist
 /dist/
+/dist-svg/
