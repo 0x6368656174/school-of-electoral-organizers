@@ -1,0 +1,9 @@
+Package: school-of-electoral-organizers
+Title: My First Collection of Functions
+Author: Pave Puchkov [aut, cre]
+Maintainer: Pavel Puchkov <0x6368656174@gmail.com>
+Depends: R (>= 3.1.0)
+Suggests: MASS
+Description: Пособие для повышения уровня профессиональной подготовки кадров избирательных комиссий всех уровней в Хабаровском крае
+License: GPL (>= 2)
+URL: https://github.com/0x6368656174/school-of-electoral-organizers
