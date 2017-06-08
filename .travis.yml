@@ -1,7 +1,7 @@
+language: r
+pandoc_version: 1.19
 dist: trusty
 sudo: required
-install:
-- sudo apt-get install -qq pandoc
 script:
 - "./build.sh"
 deploy:
