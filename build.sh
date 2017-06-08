@@ -1,13 +1,14 @@
 #!/bin/bash
+rm -r dist
+mkdir -p dist
 
 echo 'build book.epub'
-rm -r dist
 rm -r build
-mkdir -p dist
 mkdir -p build
 find src -iname "*.md" -exec cp {} build \;
 find src -iname "*.png" -exec cp {} build \;
 find src -iname "*.svg" -exec cp {} build \;
+cp README.md build/0.md
 cp title.txt build
 
 cd build
@@ -40,18 +41,23 @@ pandoc -f markdown+header_attributes -t epub2 -S --normalize --epub-chapter-leve
 
 cd ..
 echo 'build book-svg.epub'
-rm -r dist-svg
 rm -r build-svg
-mkdir -p dist-svg
 mkdir -p build-svg
 find src -iname "*.md" -exec cp {} build-svg \;
 find src -iname "*.png" -exec cp {} build-svg \;
 find src -iname "*.svg" -exec cp {} build-svg \;
+cp README.md build-svg/0.md
 cp title.txt build-svg
 
 node_modules/.bin/svgo -f build-svg
 
 cd build-svg
+
+PNG=`find . -iname "*.png"`
+for f in $PNG
+do
+    optipng $f
+done
 
 FILES=`find . -iname "*.md" | sort`
 
