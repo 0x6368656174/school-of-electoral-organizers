@@ -1,6 +1,7 @@
 ---
-title: Пособие "Школа организаторов выборов"
-author: Павел Пучков
+title: Пособие «Школа организаторов выборов»
+author: Павел Пучков (0x6368656174@gmail.com)
+URL: https://github.com/0x6368656174/school-of-electoral-organizers
 rights:  Creative Commons Non-Commercial Share Alike 3.0
 language: ru-RU
 ...

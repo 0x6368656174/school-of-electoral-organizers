@@ -1,8 +1,15 @@
 dist: trusty
 sudo: required
-
-install: 
-  - sudo apt-get install -qq pandoc
-
+install:
+- sudo apt-get install -qq pandoc
 script:
-  - ./make.sh
+- "./buld.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: ciWVZgEg041kVMjzCXFfrE9t5L82O11HU+fu1GqEh+6ikEhfWuGz4hpyKZfguhkpMG1BQn8q9CWjiuQhRBlsW+u3I9B1NAnbCAVRctRb7TI5ytiMIdT+fOy1hcfJ9iAFP6rOJX2YxWSbVAvkumYVGe/+mwvQHV0xRCjDRtKwZmfTaEC5C+lg0hwCds90VA8RfIAOkuYzHYJXwv22B+5EBR4rj4GCshAQVVgNKFi/IdGGvBxl1Erjlg77RkmveHRQPKbypSLAfxq6x1gMxGTGLkp+ceR6yhT7ucSrKZj71vpDOWQM1yW/bbwyuYY0C/9/yLE6jkCDNg+2TFHrTETmuWv4mumzCuxwhb7GNZhauy3tfnBE72P0b7jxyoHuy8ndqoSBF8GKVYMiReJn6+2ETXlCrXJg8ijOiNA2JhW+lJ/XZ6y4YV4RUWb9diV4snGJka/bB020KMt0yZY9GC9OsBBPaER7G9KUn0nPx80sbqbNeaL3/OH6NMl9szttCnY3KfqtiJd0Vrc9LVZD6J33KPZX36It4CIGWlMhNm0VLfxkyX7UTFFW0VVQ6Hl6zJGmbv3UwDUDsdEWVC8cA4oU1vUWcmIDcoGyCeVisUZzvZEOWXUPwW6FC0mlO0d6jA5Aom2HrKYgrn9owS46K57kZAt62dyjBrOyzUA4gjRrY1M=
+  file: dist/book.epub
+  skip_cleanup: true
+  on:
+    tags: true
+  overwrite: true
