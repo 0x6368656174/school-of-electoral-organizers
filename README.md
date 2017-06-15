@@ -9,4 +9,4 @@
 - с изображениями в формате SVG;
 - с изображениями в формате PNG.
 
-Актуальную версию пособия в виде электронной книги ePub можно скачать в [релизах GitHub](https://github.com/0x6368656174/school-of-electoral-organizers/releases/latest).
+Актуальную версию Пособия в виде электронной книги ePub можно скачать в [релизах GitHub](https://github.com/0x6368656174/school-of-electoral-organizers/releases/latest).
