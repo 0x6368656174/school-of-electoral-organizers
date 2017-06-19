@@ -19,3 +19,5 @@ deploy:
   on:
     tags: true
   overwrite: true
+notifications:
+  slack: itquasarorg:YkiUgN9ebH41xR4k50orcpzB
