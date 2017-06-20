@@ -49,7 +49,7 @@ find src -iname "*.svg" -exec cp {} build-svg \;
 cp README.md build-svg/0.md
 cp title.txt build-svg
 
-node_modules/.bin/svgo -f build-svg
+#node_modules/.bin/svgo -f build-svg
 
 cd build-svg
 
