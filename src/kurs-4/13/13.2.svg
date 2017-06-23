@@ -31,10 +31,10 @@ viewBox="0 0 11571 7056"
     .fil0 {fill:url(#id0)}
    ]]>
   </style>
-  <radialGradient id="id0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.17124 -0 -0 1.92083 -991 -3248)" cx="5785.55" cy="3527.78" r="10000" fx="5785.55" fy="3527.78">
-   <stop offset="0" style="stop-opacity:1; stop-color:#FEFEFE"/>
-   <stop offset="0.439216" style="stop-opacity:1; stop-color:#FEFEFE"/>
-   <stop offset="1" style="stop-opacity:1; stop-color:#D1E2F2"/>
+  <radialGradient id="id0" gradientUnits="userSpaceOnUse" cx="6103.05" cy="3845.28" r="5785.57" fx="6103.05" fy="3845.28">
+   <stop offset="0" style="stop-color:#FEFEFE"/>
+   <stop offset="0.45098" style="stop-color:#FEFEFE"/>
+   <stop offset="1" style="stop-color:#D2E2F2"/>
   </radialGradient>
  </defs>
  <g id="Layer_x0020_1">
