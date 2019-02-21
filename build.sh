@@ -1,9 +1,9 @@
 #!/bin/bash
-rm -r dist
+rm -rf dist
 mkdir -p dist
 
 echo 'build book.epub'
-rm -r build
+rm -rf build
 mkdir -p build
 find src -iname "*.md" -exec cp {} build \;
 find src -iname "*.png" -exec cp {} build \;
