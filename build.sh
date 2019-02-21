@@ -27,6 +27,8 @@ do
     node_modules/.bin/svgexport build/$f build/$filename.png 640:
 done
 
+cd build
+
 find . -type f -name '*.md' -exec sed -i -r 's/\.svg\w*\)/\.png\)/g' {} \;
 
 FILES=`find . -iname "*.md" | sort`
