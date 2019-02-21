@@ -33,7 +33,7 @@ find . -type f -name '*.md' -exec sed -i -r 's/\.svg\w*\)/\.png\)/g' {} \;
 
 FILES=`find . -iname "*.md" | sort`
 
-pandoc -f markdown+header_attributes+smart -t epub3 --epub-chapter-level=4 --toc-dept=4 -o ../dist/book.epub title.txt $FILES
+pandoc -f markdown+header_attributes -t epub3 -S --normilize --epub-chapter-level=4 --toc-dept=4 -o ../dist/book.epub title.txt $FILES
 
 
 
@@ -60,4 +60,4 @@ done
 
 FILES=`find . -iname "*.md" | sort`
 
-pandoc -f markdown+header_attributes+smart -t epub3 --epub-chapter-level=4 --toc-dept=4 -o ../dist/book-svg.epub title.txt $FILES
+pandoc -f markdown+header_attributes -t epub3 -S --normilize --epub-chapter-level=4 --toc-dept=4 -o ../dist/book-svg.epub title.txt $FILES
