@@ -40,7 +40,7 @@ pandoc -f markdown+header_attributes+smart -t epub3 --epub-chapter-level=4 --toc
 
 cd ..
 echo 'build book-svg.epub'
-rm -r build-svg
+rm -rf build-svg
 mkdir -p build-svg
 find src -iname "*.md" -exec cp {} build-svg \;
 find src -iname "*.png" -exec cp {} build-svg \;
