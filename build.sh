@@ -12,6 +12,12 @@ cp README.md build/0.md
 cp title.txt build
 
 cd build
+PNG=`find . -iname "*.png"`
+for f in $PNG
+do
+    optipng $f
+done
+
 SVG=`find . -iname "*.svg"`
 cd ..
 for f in $SVG
@@ -19,22 +25,13 @@ do
     filename=$(basename "$f")
     filename="${filename%.*}"
     node_modules/.bin/svgexport build/$f build/$filename.png 640:
-    optipng build/$filename.png
-done
-
-cd build
-
-PNG=`find . -iname "*.png"`
-for f in $PNG
-do
-    optipng $f
 done
 
 find . -type f -name '*.md' -exec sed -i -r 's/\.svg\w*\)/\.png\)/g' {} \;
 
 FILES=`find . -iname "*.md" | sort`
 
-pandoc -f markdown+header_attributes -t epub3 -S --normalize --epub-chapter-level=4 --toc-dept=4 -o ../dist/book.epub title.txt $FILES
+pandoc -f markdown+header_attributes+smart -t epub3 --epub-chapter-level=4 --toc-dept=4 -o ../dist/book.epub title.txt $FILES
 
 
 
