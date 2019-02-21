@@ -1,23 +1,25 @@
 language: r
-cache: packages
-pandoc_version: 1.19
-dist: trusty
-sudo: required
+cache:
+- packages
+- npm
+addons:
+  apt:
+    packages:
+    - optipng
 install:
-- "sudo apt-get install optipng -qq"
-- "npm install"
+- npm install
 script:
 - "./build.sh"
 deploy:
   provider: releases
   api_key:
-    secure: ciWVZgEg041kVMjzCXFfrE9t5L82O11HU+fu1GqEh+6ikEhfWuGz4hpyKZfguhkpMG1BQn8q9CWjiuQhRBlsW+u3I9B1NAnbCAVRctRb7TI5ytiMIdT+fOy1hcfJ9iAFP6rOJX2YxWSbVAvkumYVGe/+mwvQHV0xRCjDRtKwZmfTaEC5C+lg0hwCds90VA8RfIAOkuYzHYJXwv22B+5EBR4rj4GCshAQVVgNKFi/IdGGvBxl1Erjlg77RkmveHRQPKbypSLAfxq6x1gMxGTGLkp+ceR6yhT7ucSrKZj71vpDOWQM1yW/bbwyuYY0C/9/yLE6jkCDNg+2TFHrTETmuWv4mumzCuxwhb7GNZhauy3tfnBE72P0b7jxyoHuy8ndqoSBF8GKVYMiReJn6+2ETXlCrXJg8ijOiNA2JhW+lJ/XZ6y4YV4RUWb9diV4snGJka/bB020KMt0yZY9GC9OsBBPaER7G9KUn0nPx80sbqbNeaL3/OH6NMl9szttCnY3KfqtiJd0Vrc9LVZD6J33KPZX36It4CIGWlMhNm0VLfxkyX7UTFFW0VVQ6Hl6zJGmbv3UwDUDsdEWVC8cA4oU1vUWcmIDcoGyCeVisUZzvZEOWXUPwW6FC0mlO0d6jA5Aom2HrKYgrn9owS46K57kZAt62dyjBrOyzUA4gjRrY1M=
-  file: 
+    secure: RBUEnHy0AYtaBuHulnPNNwQg1ARElgFxzQ1PU9g9uZVpXbBiLWlQeUAnxtstLrP6glVtXr2EZy6f3A+PYdDdvkmitUbttXmQYXOPliD6Mms22zzDbiV4PPcm0PMI4j9lEhzRAUlJEw7MgolJfLa3g0nETgj3XptaBOsTatU2NK1NkcxY+z2rvRB+sYY1M4soFWgCUqj7gnk/hZ6byGzKOP1aqQ2ui78ok0Si/eslGC9CmO74lpzoLCOxDqHm3sb7qeGOJ44fCvj1c2/rWTR+KUvTyoJwuF+oqONs8Y9+hDFJyKgM/luSUx/761HXsJ/e4i2GqyteEwjayHPwWo5ar/SECBSFn90Eoc81RnTWLL4Fih+R5LbdqItSX3XvIGdoKJEqbw7BDBf/tT9VvolyTcjxRrHry/H8D5KnpWtapJ1yfGh4feZkDW9ZMoBJAqU4kJk7C7so7wjfBcL+wXGCZwIkcT3O2SfPTXZvgrX/N4dpSuTB0tWs79PiahlhNqdFZX7dik4UJErQWfhABvwn+K3iNDjjbNLrRUyTQ9jzs9KEfN9CQ2Vs81RCqDmKwMVgv+A7OZ6CYa9WphgRMfbUypPkTKxzLpJ0H+Q5jrct1ZKpb6h4OHv+ZCwtlwYAFfEgSpjzOK7g9hFQnySyCEz4ebmQBkeNJ4I2kHspYZNUCMA=
+  file:
   - dist/book.epub
   - dist/book-svg.epub
   skip_cleanup: true
   on:
     tags: true
-  overwrite: true
 notifications:
-  slack: itquasarorg:YkiUgN9ebH41xR4k50orcpzB
+  slack:
+    secure: XYUPztH2WCYkbL43LVJ8tzQTXjUP2y+n46NmcSsKo7QZUlSHuHIMtxQX09PUWU04JFHI/zNymiJvpvMxKhIA8DvDCGNdrA5iBq39Ro66qe9DNsjdz6q4cSgiyQ/dVz2xf96EKQ6W9ulm2NixneXlk6Yc3r0ADXhfLrP5pDBb0YQqnRxbfNyOJo+AzJOoBKJWj4q3brT3j4EBNOfni4hGf5y/xdlpRmgWxUfcd01VIgUo770jQaJPULIsFkjVDTuUP9sjxiwesdVY/xg4QEaAaYfqgZfhpi1RE8Ht/j0VtSPsnU1Me/yQCw7UOgvX84JoAuVdBjr/0bjRQF/XXhkrdeziXlPhGG9q0MDWQxyp5eyuk/rP20qfmyFXTZGNYXGKKTWACFEAslFZaulIefKQbDApawlVfXWQ/BoA0xHdQko9yopPm0eT1MQXCwCGn1yVUSU1Jg/nZI5IGsef6JxpOw5Tcw1p7c3YPtkkf6AVJd564Fs6U8FSq+sErIXxgVC+g68Lecv2gloeWL//ynNC3SfqXhciWSOGj0ysmnbiFUPo+u8/WLmtZcdewrMLz/23JZYxyCxtlmMVpXrHMdAr8/Huw2NeAZ77TwBYvtKW4z7Tb3QK1Z6+nGvgK+Q4lMWIEkbj0r3BVfYEXAW32eNw1zlp95oQh9JxQMhbEmBgONs=
